@@ -15,12 +15,47 @@
 
 		<div class="container">
 
-			<h3>WEATHER FORECAST</h3>
+			<h3 class="heading">WEATHER FORECAST</h3>
 
 			<form>
+				<div class="component">
 
-				<input type="text" name="city" id="city_name" placeholder="Enter a city">
-				<button type="button" onclick="fetchCity()"><img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-search-icon-image_1344447.jpg" alt="Search Icon" height="20px">  </button>
+					<div>
+
+						<input type="text" name="city" id="cityname" placeholder="Enter a city" autofocus>
+					</div>
+
+					<div class="btn">
+						<button type="button" class="srch_btn" onclick="fetchCity()"><img src="https://www.freepnglogos.com/uploads/search-png/search-very-basic-icon-ios-iconset-icons-7.png" alt="Search Icon" height="30px">  </button>
+					</div>
+
+				</div>
+
+				<br>
+
+				<div align="center" style="margin-top: -30px;"><img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" alt="WeatherIcon" height="150px"> 
+				</div>
+
+				<div align="center" style="margin-top:-10px">
+					<span id="city">CITY NAME</span> 
+					<br>
+					<span class="measurement" id="temp">0°C</span>
+				</div>
+
+				<div align="center" style="margin-top:20px">
+					<table width="100%" cellpadding="10px">
+						<tr align="center">
+							<td>
+								<h5 class="headings">WIND SPEED</h5>
+								<span class="measurement" id="wind_speed"> 0 Km/hr</span>
+							</td>
+							<td>
+								<h4 class="headings">HUMIDITY</h4>
+								<span class="measurement" id="humidity"> 0 g/kg</span>
+							</td>
+						</tr>
+					</table> 
+				</div>
 
 			</form>
 
